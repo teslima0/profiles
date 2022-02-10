@@ -1,0 +1,48 @@
+{% extends 'base.html' %}
+
+{% load static %}
+{% block content %}
+
+<head>
+    <link href="{% static 'assets/css/blackjack.css'%}" rel="stylesheet">
+   
+</head>
+<!-- ======= Breadcrumbs ======= -->
+<section class="breadcrumbs">
+    <div class="container">
+
+      <div class="d-flex justify-content-between align-items-center">
+        <h4 style="color:blue;">Tamarcom Blackjack game</h4>
+        <ol>
+          <li><a href="{% url  'homepage'  %}">Home</a></li>
+          <li>CGPA Calculator</li>
+        </ol>
+      </div>
+
+    </div>
+  </section><!-- End Breadcrumbs -->
+
+  <section class="inner Page">
+
+<body >
+
+<div class="container" style="background-color:rgba(14, 159, 24, 0.774); text-align: center; color: white; width: 400px; height: 500px; padding-top: 20px;">
+    <h1 style="color: goldenrod; margin-top: 10px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">
+       TAMARCOM'S Blackjack Game
+        
+    </h1>
+    <p id="mssg" style="font-weight: bold; font-style: italic;">Want to Play?</p>
+        <P id="card-el">Cards:</P>
+        <p id="sum-el">Sum:</p>
+        
+        <button onclick="startGame()" style="background-color: goldenrod; color: black; padding-bottom: 2px; padding-bottom: 2px; font-weight:bold; margin-top: 3px;" >Start Game</button><br>
+        <button onclick="newCard()" style="background-color: goldenrod; color: black; padding-bottom: 2px; padding-bottom: 2px; font-weight:bold; margin-top: 3px;">New Card</button><br>
+        <p id="player-el"></p>
+
+</div>
+
+<script src="{% static 'assets/js/blackJack.js'%}"></script>
+    
+</body>
+
+{% endblock %}

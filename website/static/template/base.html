@@ -1,0 +1,719 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>
+    {% block title %} 
+    Tamarcom 
+    {% endblock %}
+  </title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'%}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'%}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/icofont/icofont.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/boxicons/css/boxicons.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/venobox/venobox.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/owl.carousel/assets/owl.carousel.min.css'%}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css'%}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/style.css'%}" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: iPortfolio - v1.4.0
+  * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  {% block content%}
+ 
+  <!-- ======= Mobile nav toggle button ======= -->
+  <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="{% static 'assets/img/profile-img.jpg '%}" alt="" class="img-fluid rounded-circle">
+        <h1 class="text-light"><a href="{% url  'homepage'  %}">Oyedotun Teslim</a></h1>
+        <div class="social-links mt-3 text-center"> 
+          <a href="https://www.twitter.com/teslim0" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="https://www.facebook.com/oyedotuna" class="facebook"><i class="bx bxl-facebook"></i></a>
+          <a href="https://www.facebook.com/oyedotuna" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="https://www.bxl-skype.com/teslima0" class="google-plus"><i class="bx bxl-skype"></i></a>
+          <a href="https://www.linkedin.com/in/teslim-oyedotun-22412535" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+        </div>
+      </div>
+
+      <nav class="nav-menu">
+        <ul>
+          <li class="active"><a href="{% url  'homepage'  %}"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio"><i class="bx bx-book-content"></i> Portfolio</a></li>
+          <li><a href="#services"><i class="bx bx-server"></i> Services</a></li>
+          <li><a href="#contact"><i class="bx bx-envelope"></i> Contact</a></li>
+
+        </ul>
+      </nav><!-- .nav-menu -->
+      <button type="button" class="mobile-nav-toggle d-xl-none"><i class="icofont-navigation-menu"></i></button>
+
+    </div>
+  </header><!-- End Header -->
+ 
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center"  style="background-image: url({% static 'assets/img/tam.jpg'%});">
+    
+    <div class="hero-container" data-aos="fade-in" >
+      <h1>Hi</h1>
+      <p>I am a <span class="typed" data-typed-items="Web designer, Developer,Researcher, content writer, Freelancer and Data analyst"></span></p>
+    </div>
+  
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p> My name is Oyedotun Teslim, i was born and raised in Ibadan, Oyo State Nigeria. 
+              I'm one of the privilege ones that follow the path of Al-Islam. 
+              I had both my primary and secoundary education here in Ibadan. 
+              I proceeded to Lautech where i bagged my first degree (B. Tech. computer engineering). 
+               Then to Obafemi Awolowo University where i bagged Msc. in computer engineering. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4" data-aos="fade-right">
+            <img src="{% static 'assets/img/profile-img.jpg'%}" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+            <h3>Data Analysist &amp; Web Developer.</h3>
+            <p class="font-italic">
+              It's always being my dream to positively impact my community, state, the nation and the entire world at large. which i belive many of our problem can be solve technologically.
+              i develop App to ease your doing.
+            </p>
+            <div class="row">
+              <div class="col-lg-6">
+                <ul>
+                  <!--<li><i class="icofont-rounded-right"></i> <strong>Birthday:</strong> 1 March 199-</li>-->
+                  <li><i class="icofont-rounded-right"></i> <strong>Website:</strong> www.tamar.com</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Phone:</strong> +2348054875791</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>City:</strong> City : Ibadan, Nigeria</li>
+                </ul>
+              </div>
+              <div class="col-lg-6">
+                <ul>
+                  <!--<li><i class="icofont-rounded-right"></i> <strong>Age:</strong> 30</li>-->
+                  <li><i class="icofont-rounded-right"></i> <strong>Degree:</strong> Master</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>PhEmailone:</strong> oyedotuna@gmail.com</li>
+                  <li><i class="icofont-rounded-right"></i> <strong>Freelance:</strong> Available</li>
+                </ul>
+              </div>
+            </div>
+            <p>
+              The aim of our establishment is to make your daily engament easy by helping you develop App that will do all the tough work for you. 
+              Our office is locate at no1,ifedapo alabakan , sanyo agbamu road along lagos ibadan express way, sanyo junction ibadan,Oyo State, Nigeria.
+            
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Facts Section ======= -->
+    <section id="facts" class="facts">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Facts</h2>
+          <p>we have been receiving a great couple of commendation from our client. our establishment is not set out to enrich ourself alone but also help you achieve your full potentials.</p>
+        </div>
+
+        <div class="row no-gutters">
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up">
+            <div class="count-box">
+              <i class="icofont-simple-smile"></i>
+              <span data-toggle="counter-up">2</span>
+              <p><strong>Happy Clients</strong> consequtives feedback </p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="100">
+            <div class="count-box">
+              <i class="icofont-document-folder"></i>
+              <span data-toggle="counter-up">5</span>
+              <p><strong>Projects</strong> we have been able to achive this lot in less than 2 years</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="200">
+            <div class="count-box">
+              <i class="icofont-live-support"></i>
+              <span data-toggle="counter-up">2423</span>
+              <p><strong>Hours Of Support</strong> we have expended this Hours all through</p>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 d-md-flex align-items-md-stretch" data-aos="fade-up" data-aos-delay="300">
+            <div class="count-box">
+              <i class="icofont-users-alt-5"></i>
+              <span data-toggle="counter-up">15</span>
+              <p><strong>Hard Workers</strong> we are a great team player in recent time.</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Facts Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Skills</h2>
+          <p>I develop website with, HTML and css, majorly with Boostra p and Django. I develop application with python programing language. in addition, i'm a data analysist.</p>
+        </div>
+
+        <div class="row skills-content">
+
+          <div class="col-lg-6" data-aos="fade-up">
+
+            <div class="progress">
+              <span class="skill">HTML <i class="val">90%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">80%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScripts <i class="val">50%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PYTHON <i class="val">70%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Django <i class="val">60%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">65%</i></span>
+              <div class="progress-bar-wrap">
+                <div class="progress-bar" role="progressbar" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          <p>we are not only distrupting digital world, but we have come to take the leadership role.
+               We create remarkable user experience app for ecommerce, school managment, online store, medical diagnosis app. We equally
+              build responsive web design and development and craft copy for businesses and organization. </p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up">
+            <h3 class="resume-title">Summary</h3>
+            <div class="resume-item pb-0">
+              <h4>Oyedotun Teslim</h4>
+              <p><em>Innovative and deadline-driven developer with just a year of experience developing app that is user frirndly.</em></p>
+              <ul>
+                <li>Dugbe,Ibadan, Oyo State Nigeria.</li>
+                <li>+2348054875791</li>
+                <li>tamarcom.tech@gmail.com</li>
+              </ul>
+            </div>
+
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <h4>Master of Science &amp; Computer Engineering </h4>
+              <h5>2018 - 2021</h5>
+              <p><em>Obafemi Awolowo University, Ile-Ife Osun State, Nigeria</em></p>
+              <p> It's unaguable that OAU is not only the best university in Nigeria but also in the entire west africa. 
+                  Going to OAU exposed me to researh and technical writing. 
+                  My research area was on authorship analysis- where anonymous Yoruba text was used to inferred the religion of the author.</p>
+            </div>
+            <div class="resume-item">
+              <h4>Bachelor of Technology &amp; Computer Engineering</h4>
+              <h5>2010 - 2015</h5>
+              <p><em>Ladoke Akintola University of Technology, ogbomosho, Oyo State Nigeria</em></p>
+              <p> LAUTECH is one of the leading technology schools in Nigeria. For many years its has 
+                  retain best state university award and maintain 5th position overall. I'm super proud that i had my first degree from there
+                  Its gave me solid foundation to learn faster,
+                  going there was a dream comes true.</p>
+            </div>
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <h4>Datacom Nigeria limited</h4>
+              <h5>2019 - Present</h5>
+              <p><em>Dugbe, Oyo state, Nigeria </em></p>
+              <ul>
+                <li>Lead in the design and web development, and development of  application</li>
+                <li>Delegate tasks to the 5 members of the design team and provide counsel on all aspects of the project. </li>
+                <li>Supervise the assessment of all the necessary materials in order to ensure quality and accuracte development</li>
+                <li>Oversee the efficient use of production project budgets ranging from $20 - $1000</li>
+              </ul>
+            </div>
+            <div class="resume-item">
+              <h4>Developer</h4>
+              <h5>2017 - 2018</h5>
+              <p><em>Stepping Stone Advertising, Ibadan, Nigeria</em></p>
+              <ul>
+                <li>Developed numerous applications such as CGPA calculator, Age calculator, chatbot, dender and age prediction app and, web design and development.</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted with clients on the most appropriate app development.</li>
+                <li>Created 2+ app and proposals a month for clients and account managers</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Resume Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>this are the task we do in datacom Nigeria limited</p>
+        </div>
+
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">Apps</li>
+              <li data-filter=".filter-card">Mobile Apps</li>
+              <li data-filter=".filter-web">Web Apps</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-7.PNG'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-71.PNG'%}" data-gall="portfolioGallery" class="venobox" title="App 1"><i class="bx bx-plus"></i></a>
+                 <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-71.PNG'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-71.PNG'%}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+               <!-- <a href="#" title="More Details"><i class="bx bx-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-3.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-3.jpg'%}" data-gall="portfolioGallery" class="venobox" title="App 2"><i class="bx bx-plus"></i></a>
+                <a href="{% url  'FormView2'  %}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-4.PNG'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-4.PNG'%}" data-gall="portfolioGallery" class="venobox" title="Card 2"><i class="bx bx-plus"></i></a>
+                <a href="{% url  'blackjack'  %}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-5.PNG'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-5.PNG'%}" data-gall="portfolioGallery" class="venobox" title="Web 2"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-6.PNG'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-6.PNG'%}" data-gall="portfolioGallery" class="venobox" title="App 3"><i class="bx bx-plus"></i></a>
+                <a href="#" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-8.PNG'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-8.PNG'%}" data-gall="portfolioGallery" class="venobox" title="Card 1"><i class="bx bx-plus"></i></a>
+                <!--<a href="#" title="More Details"><i class="bx bx-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-card">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-9.PNG'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-8.PNG'%}" data-gall="portfolioGallery" class="venobox" title="Card 3"><i class="bx bx-plus"></i></a>
+                <a href="{% url  'cgpapage'  %}" title="More Details"><i class="bx bx-link"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="{% static 'assets/img/portfolio/portfolio-9.jpg'%}" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="{% static 'assets/img/portfolio/portfolio-9.jpg'%}" data-gall="portfolioGallery" class="venobox" title="Web 3"><i class="bx bx-plus"></i></a>
+               <!-- <a href="#" title="More Details"><i class="bx bx-link"></i></a>-->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Services</h2>
+          <p>Tamarcom Technology is a leading company that offer digiter services in Nigeria.<br>
+            we are driven by our determination to offer best service to our client.</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up">
+            <div class="icon"><i class="icofont-computer"></i></div>
+            <h4 class="title"><a href="">WEBSITE DESIGN & DEVELOPMENT</a></h4>
+            <p class="description">
+                
+                I craft websites that help businesses grow! it's my believed that website service shouldn't be one-size-fits-all 
+                approach. Each website is distinct, and it necessitates a customized touch in order to suit certain business
+                 requirements. I assure you of a unique website that will help grow your business.
+             </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
+            <div class="icon"><i class="icofont-twitter"></i></div>
+            <h4 class="title"><a href="#">Full Stack Web Application Development</a></h4>
+            <p class="description">
+                I have extensive knowledge of the latest technologies to build a business-centric web application.
+                 For front-end service, i use latest technology such as Angular, CSS, javascript and React.  Similarly, for back-end 
+                 i keep up with industry trends and sophisticated technologies such as Django, Flask, Laravel, Node.js, and others.
+                  And meticulously work to produce a finished product that is flawless. </p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
+            <div class="icon"><i class="icofont-camera"></i></div>
+            <h4 class="title"><a href="">API development and integration</a></h4>
+            <p class="description">The computing interface that defines how several software 
+                intermediaries interact is known as API. 
+                I create a secure REST framework as a robust and flexible toolkit for developing custom web APIs. 
+                To ensure REST API security,
+                 i use a three-level protocol: authentication / tokenization, encryption, and origin validation.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
+            <div class="icon"><i class="icofont-tasks-alt"></i></div>
+            <h4 class="title"><a href="#">Digital Marketing</a></h4>
+            <p class="description">I render topnotch digital services. Our data and results-driven internet
+                 marketing strategy assist in getting the right message to the right people at the right time on the right platform.
+                  We offer digital marketing services such as SEO, Copywriting, content writing, product descriptions 
+                  and social media post, by seamlessly blending
+                 keyword research, target audience analysis, and quality content development.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
+            <div class="icon"><i class="icofont-live-support"></i></div>
+           <h4 class="title"><a href="#">Database</a></h4>
+            <p class="description">I can build both 
+                DBMS & RDBMS and ensure that your 
+                application’s data are completely secure and easily accessible whenever needed. I use  
+                PostgreSQL, MySQL, and MongoDB for database development.</p>
+          </div>
+          <div class="col-lg-4 col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
+            <div class="icon"><i class="icofont-tasks-alt"></i></div>
+            <h4 class="title"><a href="">MOBILE AND WEB APP DEVELOPMENT SERVICES </a></h4>
+            <p class="description">Do you need a mobile app for your business? I'm here to help you out! Irrespective of the size of 
+                your project. I will equally work with you to select the best technology platform define the scope, and build the right app for your business. 
+                </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials section-bg">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Testimonials</h2>
+          <p>Below the feedback from  some of our clients at Tamarcom Technology.</p>
+        </div>
+
+        <div class="owl-carousel testimonials-carousel">
+
+          <div class="testimonial-item" data-aos="fade-up">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              “Excellent and professional service. It is a pleasure working with Teslim. 
+              He always listen to any requests or changes required and produce high quality satisfactory work.
+               Would highly recommend the services provided.”
+              
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="{% static 'assets/img/testimonials/testimonials-1.jpg'%}" class="testimonial-img" alt="">
+            <h3> Aare Habib</h3>
+            <h4>Ceo of Olori Farm Investment</h4>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="100">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              “We have our website developed by Teslim. It is a fantastic journey with him.
+               He has supported us effectively and efficiently throughout the journey.
+               All our requirements have been addressed efficiently.”
+               
+              
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="{% static 'assets/img/testimonials/testimonials-2.jpg'%}" class="testimonial-img" alt="">
+            <h3>Miss Mariam</h3>
+            <h4>CEO Omatech Technology</h4>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="200">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              "I told Teslim to include robots that will respond to our prospective customers because of the nature of my busy schedule which he perfectly did.
+
+              I was over the moon when he finally handover the website to me; so neat, well arranged, and structured, and used the necessary keywords that rank my website on Google. 
+              I can say that my sales increase immediately he help us launch the website.”
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="{% static 'assets/img/testimonials/testimonials-3.jpg'%}" class="testimonial-img" alt="">
+            <h3>Miss Adeseun</h3>
+            <h4>CEO Adeseun collection</h4>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="300">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              “My business website was developed by Teslim. It is highly responsive and facinating.
+               The design meet all the set requirement of my business which enhance my sale.
+               All my concern was taken care of efficiently.”
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="{% static 'assets/img/testimonials/testimonials-4.jpg'%}" class="testimonial-img" alt="">
+            <h3>Benjamen Nathaniel</h3>
+            <h4>Teacher</h4>
+          </div>
+
+          <div class="testimonial-item" data-aos="fade-up" data-aos-delay="400">
+            <p>
+              <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+              “We our mobile app was developed by Teslim. It uniques fitted into our business.
+               
+               All our hope and aspiration on the business was takin care of. Qudos to him for the job weldone.”
+              <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+            </p>
+            <img src="{% static 'assets/img/testimonials/testimonials-5.jpg'%}" class="testimonial-img" alt="">
+            <h3>Alabede Hazeezah</h3>
+            <h4>Enterpreneur</h4>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>Tamarcom Tech is an IT firm that majorly deal with the development of an artificial inteligent app, eCommerce and other responsive apps.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="icofont-google-map"></i>
+                <h4>Location:</h4>
+                <p>2, new dawn estate, sanyo area, Ibadan, NIgeria</p>
+              </div>
+
+              <div class="email">
+                <i class="icofont-envelope"></i>
+                <h4>Email:</h4>
+                <p>tamarcom.tech.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="icofont-phone"></i>
+                <h4>Call:</h4>
+                <p>+2348054875791</p>
+              </div>
+             
+              <!--<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12097.433213460943!2d-74.0062269!3d40.7101282!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb89d1fe6bc499443!2sDowntown+Conference+Center!5e0!3m2!1smk!2sbg!4v1539943755621" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>-->
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2022311.4361502314!2d3.750024283525948!3d8.119087800000003!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1037c3056e76e18b%3A0x477cc80c83f8c092!2sAjofeebo%20Health%20Center!5e0!3m2!1sen!2sng!4v1644057086377!5m2!1sen!2sng"  frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="cont" method="POST" role="form">
+              {% csrf_token %}
+              <div class="form-row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+                  <div class="validate"></div>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" data-rule="email" data-msg="Please enter a valid email" />
+                  <div class="validate"></div>
+                </div>
+              
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
+                <div class="validate"></div>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" data-rule="required" data-msg="Please write something for us"></textarea>
+                <div class="validate"></div>
+              </div>
+              <div class="mb-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+              
+                <div class="sent-message">  Your message has been sent. Thank you!</div>
+              
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+ 
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Tamarcom Technology</span></strong>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
+        Designed by <a href="#">TamarConcept</a>
+      </div>
+    </div>
+  </footer><!-- End  Footer -->
+
+  <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/jquery/jquery.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/jquery.easing/jquery.easing.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js'%}"></script>
+  <script src="{% static 'assets/vendor/waypoints/jquery.waypoints.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/counterup/counterup.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/venobox/venobox.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/owl.carousel/owl.carousel.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/typed.js/typed.min.js'%}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js'%}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js'%}"></script>
+  {% endblock %}
+</body>
+
+</html>
